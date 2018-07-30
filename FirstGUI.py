@@ -11,7 +11,7 @@ a_label.grid(column=0, row=0)
 
 # Button click event function
 def click_me():
-    action.configure(text='Hello ' + name.get() + ' ' + )
+    action.configure(text='Hello ' + name.get() + ' ' + number_chosen.get())
 
 
 # Textbox entry
@@ -36,4 +36,9 @@ number_chosen.grid(column=1, row=1)
 number_chosen.current(0)
 
 
-win.mainloop()
+def main():
+    win.mainloop()
+
+
+if __name__ == '__main__':
+    main()
